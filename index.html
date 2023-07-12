@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quizz App</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
+    <div class="appContainer">
+
+        <!-- Here we will put questions and answers -->
+
+        <div id="questionContainer" class="hide">
+            <div id="question" class="question">Question</div>
+            
+            <div id="answerButtons" class="grid">
+                <button class="btn correct">Answer 1</button>
+                <button class="btn incorrect">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+
+
+        <!-- Controls for start/next -->
+
+        <div id="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn">Next</button>
+        </div>
+      
+        <!-- Controls for restart or quit quiz -->
+        <div class="result-box">
+            <div class="complete-text">You've completed the quiz!</div>
+            <div class="score-text">
+                <!-- inserting score from js -->
+            </div>
+        <div class="endButtons">
+            <button id="restart-btn" class="restart-btn btn">Restart Quiz</button>
+            <button id="quit-btn" class="quit-btn btn">Quit</button>
+        </div>
+
+    </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
