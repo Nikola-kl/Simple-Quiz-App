@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    font-size: 18px;
 }
 
 body {
@@ -17,6 +17,7 @@ body {
     
 }
 
+
 ::selection {
     color: white;
     background: rgb(16, 111, 158);
@@ -28,8 +29,8 @@ body {
     width: 50%;
     min-width: 300px;
     max-width: 750px;
-    height: 50%;
-    min-height: 450px;
+    /* height: 50%; */
+    /* min-height: 450px; */
     border: 2px solid white;
     border-radius: 5px;
     background: white;
@@ -53,18 +54,19 @@ body {
 #questionContainer {
     margin-bottom: 15px;
 }
-/* .appContainer {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    width: 650px;
-    height: 550px;
-} */
+
 
 .btn {
     font-size: 1rem;
+    transition-duration: 350ms;
+    transition-property: background;
+}
+
+.btn:hover {
+    background: rgb(26, 145, 153);
+    /* border: none; */
+    box-shadow: 2px 2px 5px gray;
+    color: azure;
 }
 .grid {
     display: grid;
@@ -87,6 +89,14 @@ body {
 }
 
 
+/* .start-btn {
+    display: none;
+}
+.next-btn {
+    display: none;
+} */
+
+
 #controls button {
     width: 100px;
     height: 75px;
@@ -101,6 +111,19 @@ body {
     flex-direction: column;
     /* display: none; */
 }
+
+.result-box > * {
+    margin: 5px;
+    display: flex;
+}
+
+.result-box > * > * {
+    margin: 10px;
+}
+
+.score-text p {
+    margin: unset;
+}
 .complete-text {
     font-size: 1.1rem;
 }
@@ -109,3 +132,11 @@ body {
     width: 100px;
     height: 75px;
 }
+
+.hide {
+    display: none;
+}
+
+/* .show {
+    display: block;
+} */

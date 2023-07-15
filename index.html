@@ -12,13 +12,13 @@
         <!-- Here we will put questions and answers -->
 
         <div id="questionContainer" class="hide">
-            <div id="question" class="question">Question</div>
+            <div id="question" class="question"><p></p></div>
             
             <div id="answerButtons" class="grid">
-                <button class="btn correct">Answer 1</button>
-                <button class="btn incorrect">Answer 2</button>
+                <!-- <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
                 <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+                <button class="btn">Answer 4</button> -->
             </div>
         </div>
 
@@ -27,13 +27,13 @@
 
         <div id="controls">
             <button id="start-btn" class="start-btn btn">Start</button>
-            <button id="next-btn" class="next-btn btn">Next</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
       
         <!-- Controls for restart or quit quiz -->
-        <div class="result-box">
-            <div class="complete-text">You've completed the quiz!</div>
-            <div class="score-text">
+        <div id="result-box" class="result-box hide">
+            <div class="complete-text">You've completed this awesome quiz!</div>
+            <div id="score-text" class="score-text">
                 <!-- inserting score from js -->
             </div>
         <div class="endButtons">
